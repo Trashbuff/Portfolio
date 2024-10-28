@@ -1,0 +1,157 @@
+*{
+    /*scroll-behavior: smooth;*/
+    border: 1px solid white;
+}
+
+body{
+    background: #303030;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#logo{
+    display: block;
+    width: 70px;
+    height: 70px;
+    filter: invert(1);
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li{
+    color: white;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav > ul > li:hover{
+    color: aqua;
+    cursor: pointer
+}
+
+li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: min(5vw, 1.2rem);
+    text-align: center;
+    padding-top: 70px;
+    border-bottom: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 4px solid #ffffff;
+    font-size: min(3vw, 1rem);
+    margin-top: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+
+#welcome-section, #projects, #contact-section{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto 10px auto;
+    max-width: 95%;
+}
+
+p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: antiquewhite;
+}
+
+/*Controls for Project Tiles */
+#projects{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+}
+
+#projects .card-title{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content:space-around;
+    color: orange;
+}
+
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    height: 250px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 3px;;
+}
+
+.project-tile > .tile{
+    display: block;
+    background-color: rgb(83, 83, 83);
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.tile-img > img{
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+/*End controls for project tiles*/
+
+footer{
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background-color: #1d1d1d;
+    font-size: 1rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: orangered;
+    text-decoration: none;
+}
