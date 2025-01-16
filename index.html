@@ -1,68 +1,165 @@
 <!DOCTYPE html>
-<html lang="en-US">
+
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css"/>
-        <title>Portfolio</title>
-        <meta name="description" content="A portfolio website for Devan Price">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Portoflio</title>
     </head>
     <body>
-        <header>
-            <img id="logo" alt="placeholder logo" src="images/logo.png">
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#welcome-section">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact-section">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <form>
-                <!--Welcome-->
-                <section id="welcome-section" role="region" aria-labelledby="about">
-                    <h1 id="about">About</h1>
-                    <div class="text">
-                        <p>What is Lorem Ipsum?
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </section>
-                <!--Projects-->
-                <section id="projects">
-                    <div class="project-tile">
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="images/stockimage.jpeg" alt="placeholder">
-                            </div>
-                            <h3 class="card-title">display text</h3>
-                        </div>
-                    </div>
-                    <div class="project-tile">
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="images/stockimage.jpeg" alt="placeholder">
-                            </div>
-                            <h3 class="card-title">display text</h3>
-                        </div>
-                    </div>
-                    <div class="project-tile">
-                        <div class="tile">
-                            <div class="tile-img">
-                                <img src="images/stockimage.jpeg" alt="placeholder">
-                            </div>
-                            <h3 class="card-title">display text</h3>
-                        </div>
-                    </div>
-                </section>
-                <!--Contact-->
-                <section id="contact-section">
-                    <h2>Contact</h2>
-                </section>
+
+        <nav>
+            <a href="#home" class="logo"><span>Trashbuff.lol</span></a>
+
+            <ul class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </ul>
+
+            <i class='bx bx-menu-alt-right' id="menu"></i>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </nav>
+
+        <section id="home">
+            <img src="images/portrait.jpg" alt="portrait">
+
+            <div class="info-box">
+                <h1><span>Hello I'm [REDACTED]</span></h1>
+                <h3><span>Internet poster</span></h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+            <div class="btn-box">
+                <div class="btn">Hire</div>
+                <div class="btn">Contact Me</div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-box">
+                <div class="about-info">
+                    <h1><span>About Me</span></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <h2><span>Skills</span></h2>
+
+                <div class="skills">
+                    <ul>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>HTML</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>CSS</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>Javascript</span>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>React</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>Node</span>
+                        </li>
+                        <li>
+                            <span><i class='bx bx-chevron-right'></i>MySQL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="images/placeholder_1.jpg" alt="placehold">
+        </section>
+
+        <section id="services">
+            <h1 class="header"><span>Services</span></h1>
+
+            <div class="services-container">
+                <div class="box">
+                    <h1><span>Ideas</span></h1>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <img src="images/placeholder_3.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <h1><span>Photography</span></h1>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <img src="images/placeholder_2.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <h1><span>Web Design</span></h1>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <img src="images/user.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="header">
+                <span>Contact</span>
+            </h1>
+            <form action="#">
+                <div class="input-box">
+                    <span>Full Name</span>
+                    <input type="text" placeholder="Enter Your Full Name">
+                </div>
+                <div class="input-box">
+                    <span>Your Email</span>
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="input-box">
+                    <span>Your Message</span>
+                    <input type="text" placeholder="Enter Your Message">
+                </div>
+
+                <div class="btn-submit">Submit</div>
             </form>
-        </main>
+        </section>
+
         <footer>
-            <div><a id="profile-link" href="https://www.freecodecamp.org/DevanPrice" target="_blank">Profile Link</a></div>
+            <div class="col-left">
+                <div class="col-box">
+                    <span><i class='bx bxs-location-plus'></i></span>
+                    <span>1234 Maple Street Springfield, IL 62701</span>
+                </div>
+
+                <div class="col-box">
+                    <span><i class='bx bx-phone' ></i></span>
+                    <span>123-456-7891</span>
+                </div>
+
+                <div class="col-box">
+                    <span><i class='bx bx-envelope' ></i></span>
+                    <span>linda@trash.com</span>
+                </div>
+            </div>
+            <div class="col-right">
+                <span>About My Services</span>
+                <p>Lorem Ipsum</p>
+                <div class="social-icons">
+                    <span><i class='bx bxl-facebook' ></i></span>
+                    <span><i class='bx bxl-twitter'></i></span>
+                    <span><i class='bx bxl-instagram' ></i></span>
+                    <span><i class='bx bxl-github' ></i></span>
+                </div>
+            </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
